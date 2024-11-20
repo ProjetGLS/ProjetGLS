@@ -1,0 +1,40 @@
+/**
+ * @file    build.gradle
+ * @author  Théo Bessel
+ * @brief   Main Gradle configuration
+ */
+
+buildscript {
+    repositories {
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    // Gradle plugins importation
+    dependencies {
+        classpath "gradle.plugin.org.dslab.gradle:ecore-plugin:1.1.5"
+    }
+}
+
+allprojects {
+    apply plugin: "application"
+
+    java {
+        // Define a java toolchain common to all projects
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(11)
+            vendor = JvmVendorSpec.ADOPTIUM
+        }
+
+        // Define Java version to use
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+}
+
+project(":Metamodels") {
+    // Define project `Metamodels`
+    apply plugin: "org.dslab.gradle.ecore"
+}
+
+project(":Transformations") {
+    // Define project `Transformations`
+}

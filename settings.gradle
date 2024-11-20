@@ -1,0 +1,9 @@
+/**
+ * @file    settings.gradle
+ * @author  Théo Bessel
+ * @brief   Gradle project imports
+ */
+
+rootProject.name = "ProjetIDM"
+
+include "Metamodels", "Transformations"
