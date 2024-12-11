@@ -4,3 +4,6 @@
 [submodule "metamodels"]
 	path = metamodels
 	url = git@github.com:ProjetGLS/metamodels.git
+[submodule "dsl"]
+	path = dsl
+	url = git@github.com:ProjetGLS/dsl.git
