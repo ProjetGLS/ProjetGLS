@@ -9,13 +9,11 @@ buildscript {
         maven { url "https://plugins.gradle.org/m2/" }
     }
     // Gradle plugins importation
-    dependencies {
-        classpath "gradle.plugin.org.dslab.gradle:ecore-plugin:1.1.5"
-    }
+    dependencies {}
 }
 
 allprojects {
-    apply plugin: "application"
+    apply plugin: "java"
 
     java {
         // Define a java toolchain common to all projects
@@ -32,9 +30,10 @@ allprojects {
 
 project(":Metamodels") {
     // Define project `Metamodels`
-    apply plugin: "org.dslab.gradle.ecore"
+    apply plugin: "application"
 }
 
 project(":Transformations") {
     // Define project `Transformations`
+    apply plugin: "application"
 }

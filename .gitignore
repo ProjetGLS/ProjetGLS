@@ -1,5 +1,10 @@
 # Ignore Gradle project-specific cache directory
 .gradle
+.metadata
 
 # Ignore Gradle build output directory
 build
+bin
+
+# Ignore system-specific files
+.DS_Store
