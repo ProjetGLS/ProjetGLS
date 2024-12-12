@@ -35,14 +35,20 @@ allprojects {
 project(":metamodels") {
     // Define project `metamodels`
     apply plugin: "application"
+
+    applicationDefaultJvmArgs = ["-XstartOnFirstThread"]
 }
 
 project(":transformations") {
     // Define project `transformations`
     apply plugin: "application"
+    
+    applicationDefaultJvmArgs = ["-XstartOnFirstThread"]
 }
 
 project(":dsl") {
     // Define project `dsl`
     apply plugin: "application"
+
+    applicationDefaultJvmArgs = ["-XstartOnFirstThread"]
 }
