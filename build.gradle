@@ -32,17 +32,17 @@ allprojects {
     }
 }
 
-project(":Metamodels") {
-    // Define project `Metamodels`
+project(":metamodels") {
+    // Define project `metamodels`
     apply plugin: "application"
 }
 
-project(":Transformations") {
-    // Define project `Transformations`
+project(":transformations") {
+    // Define project `transformations`
     apply plugin: "application"
 }
 
-project(":DSL") {
-    // Define project `Transformations`
+project(":dsl") {
+    // Define project `dsl`
     apply plugin: "application"
 }
