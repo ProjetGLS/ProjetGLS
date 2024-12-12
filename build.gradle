@@ -7,9 +7,13 @@
 buildscript {
     repositories {
         maven { url "https://plugins.gradle.org/m2/" }
+        mavenCentral()
+        gradlePluginPortal()
     }
     // Gradle plugins importation
-    dependencies {}
+    dependencies {
+        classpath "org.xtext.builder:org.xtext.builder.gradle.plugin:4.0.0"
+    }
 }
 
 allprojects {
@@ -34,6 +38,11 @@ project(":Metamodels") {
 }
 
 project(":Transformations") {
+    // Define project `Transformations`
+    apply plugin: "application"
+}
+
+project(":DSL") {
     // Define project `Transformations`
     apply plugin: "application"
 }
