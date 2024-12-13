@@ -20,12 +20,6 @@ allprojects {
     apply plugin: "java"
 
     java {
-        // Define a java toolchain common to all projects
-        toolchain {
-            languageVersion = JavaLanguageVersion.of(11)
-            vendor = JvmVendorSpec.ADOPTIUM
-        }
-
         // Define Java version to use
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -35,20 +29,15 @@ allprojects {
 project(":metamodels") {
     // Define project `metamodels`
     apply plugin: "application"
-
-    applicationDefaultJvmArgs = ["-XstartOnFirstThread"]
 }
 
 project(":transformations") {
     // Define project `transformations`
     apply plugin: "application"
-    
-    applicationDefaultJvmArgs = ["-XstartOnFirstThread"]
+
 }
 
 project(":dsl") {
     // Define project `dsl`
     apply plugin: "application"
-
-    applicationDefaultJvmArgs = ["-XstartOnFirstThread"]
 }
