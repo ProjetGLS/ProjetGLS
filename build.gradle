@@ -41,3 +41,8 @@ project(":dsl") {
     // Define project `dsl`
     apply plugin: "application"
 }
+
+project(":textgen") {
+    // Define project `textgen`
+    apply plugin: "application"
+}

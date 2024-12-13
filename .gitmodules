@@ -7,3 +7,6 @@
 [submodule "dsl"]
 	path = dsl
 	url = git@github.com:ProjetGLS/dsl.git
+[submodule "textgen"]
+	path = textgen
+	url = git@github.com:ProjetGLS/textgen.git

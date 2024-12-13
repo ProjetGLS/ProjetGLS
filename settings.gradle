@@ -6,4 +6,4 @@
 
 rootProject.name = "ProjetIDM"
 
-include "metamodels", "transformations", "dsl"
+include "metamodels", "transformations", "dsl", "textgen"
