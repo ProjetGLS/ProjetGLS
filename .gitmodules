@@ -1,12 +1,6 @@
-[submodule "transformations"]
-	path = transformations
-	url = git@github.com:ProjetGLS/transformations.git
 [submodule "metamodels"]
 	path = metamodels
 	url = git@github.com:ProjetGLS/metamodels.git
-[submodule "dsl"]
-	path = dsl
-	url = git@github.com:ProjetGLS/dsl.git
 [submodule "textgen"]
 	path = textgen
 	url = git@github.com:ProjetGLS/textgen.git
