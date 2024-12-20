@@ -1,12 +1,3 @@
----
-title: "Un Environnement de Calcul Domaine-Spécifique"
-header-includes:
- - \usepackage[hmargin=2.5cm,vmargin=3cm]{geometry}
----
-
-<div style="text-align: center;">
-<div style="display:flex;flex-direction:column;align-items:center;"><img src="logo.png" data-external="1" style="width:25em">
-    <p>Méta-modèle des schémas de tables (Figure 1.1)</p></div>
 <h1>Un Environnement de Calcul Domaine-Spécifique</h1>
 <p><b>Projet d’Ingénierie Dirigée par les Modèles</b><br>
 
